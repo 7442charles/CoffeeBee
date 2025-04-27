@@ -28,44 +28,131 @@
 
 <body class="bg-gray-900 text-white">
 
+    <!-- Floating Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-transparent z-30 shadow-md">
+        <div class="container mx-auto px-4 py-2 md:px-8 md:py-4 max-w-screen-lg">
+            <ul class="flex justify-center space-x-6 md:space-x-8">
+                <li>
+                    <a href="#home" class="text-white text-lg font-semibold hover:text-[#7c5b3a] transition-colors bg-[#4b3d3a] rounded-[83%_1%_39%_75%_/_36%_28%_48%_53%] py-2 px-4 md:py-2 md:px-6">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#shop" class="text-white text-lg font-semibold hover:text-[#7c5b3a] transition-colors bg-[#4b3d3a] rounded-[83%_32%_56%_75%_/_59%_28%_72%_70%] py-2 px-4 md:py-2 md:px-6">
+                        Shop
+                    </a>
+                </li>
+                <li>
+                    <a href="#blog" class="text-white text-lg font-semibold hover:text-[#7c5b3a] transition-colors bg-[#4b3d3a] rounded-[83%_17%_70%_30%_/_75%_30%_70%_25%] py-2 px-4 md:py-2 md:px-6">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="text-white text-lg font-semibold hover:text-[#7c5b3a] transition-colors bg-[#4b3d3a] rounded-[28%_72%_35%_65%_/_0%_100%_0%_100%] py-2 px-4 md:py-2 md:px-6">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
    <!-- Horizontal Scroll Section -->
-   <div id="horizontal-scroll" class="flex">
-    <section class="panel relative flex items-center justify-center h-screen bg-[#4b3d3a] text-[#e6d9af]">
+    <div id="horizontal-scroll" class="flex">
+        <section class="panel relative flex items-center justify-center h-screen bg-[#4b3d3a] text-[#e6d9af]">
 
-        <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('Assets/images/Coffeefarm.png'); z-index: 0;">
-          <!-- Empty div for background image -->
-        </div>
-      
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-[#10391f] opacity-40 z-10"></div>
-      
-        <!-- Text Content (Centered) -->
-        <div class="relative z-20 p-12 text-center">
-          <h1 class="text-6xl font-bold mb-6 leading-tight text-[#FFFFFF]">Growing Premium Coffee</h1>
-          <p class="text-2xl text-[#f5f4ef]">Nurturing rich soils and cultivating the finest beans for your perfect cup.</p>
-        </div>
-      
-    </section>
-      
-      
-      
+            <!-- Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('Assets/images/Coffeefarm.png'); z-index: 0;">
+            <!-- Empty div for background image -->
+            </div>
+        
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-[#10391f] opacity-40 z-10"></div>
+        
+            <!-- Text Content (Centered) -->
+            <div class="relative z-20 p-12 text-center">
+                <h1 class="text-6xl font-bold mb-6 leading-tight text-[#FFFFFF]">Growing Premium Coffee</h1>
+                <p class="text-2xl text-[#f5f4ef]">Nurturing rich soils and cultivating the finest beans for your perfect cup.</p>
+                <!-- CTA Button -->
+                <a href="#learn-more" class="mt-8 inline-block text-xl font-extrabold text-white bg-[#7c5b3a] py-4 px-12 rounded-full hover:bg-[#6b4e3b] transform hover:scale-105 transition-all duration-300 sm:py-3 sm:px-6">
+                    Discover More
+                </a>
+            </div>
+        
+        </section>
+        
+        <section class="panel relative flex flex-col md:flex-row items-center justify-center h-screen bg-[#7c5b3a] text-[#e6d9af]">
 
-    <section class="panel flex flex-col justify-center items-center bg-[#7c5b3a] text-[#e6d9af]">
-      <h1 class="text-6xl font-bold mb-4">Harvesting</h1>
-      <p class="text-2xl max-w-xl text-center">Ripe coffee cherries are handpicked with love and precision.</p>
-    </section>
+            <!-- Background Image for Mobile -->
+            <div class="absolute inset-0 w-full h-full bg-cover bg-center md:hidden" style="background-image: url('Assets/images/coffee_beans.jpg');"></div>
+            
+            <!-- Background Image for Desktop -->
+            <div class="absolute inset-0 hidden md:block w-full h-full bg-cover bg-center" style="background-image: url('Assets/images/premium_coffee.jpeg');"></div>
+        
+            <!-- Mobile-only overlay -->
+            <div class="absolute inset-0 bg-[#4b3d3a] opacity-40 md:opacity-0"></div>
+        
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-[#4b3d3a] opacity-40 z-10"></div>
+        
+            <!-- Left Half (for Desktop) -->
+            <div class="hidden md:block w-1/2 h-full rounded-l-lg relative z-10 bg-transparent">
+                <!-- Optional: You can add any content here for the left half if needed -->
+            </div>
+        
+            <!-- Text Content (Centered) -->
+            <div class="relative z-20 p-12 text-center md:w-1/2 md:text-left">
+                <h1 class="text-6xl font-bold mb-6 leading-tight text-[#FFFFFF]">
+                    Premium Coffee Beans
+                </h1>
+                <p class="text-2xl text-[#f5f4ef]">
+                    Carefully selected and hand-processed to deliver rich aroma and flavor.
+                </p>
+                <!-- CTA Button -->
+                <a href="#shop" class="mt-8 inline-block sm:text-l text-xl font-extrabold text-white bg-[#7c5b3a] py-4 px-12 rounded-full hover:bg-[#6b4e3b] transform hover:scale-105 transition-all duration-300 sm:py-2 sm:px-4">
+                    Get Premium Beans
+                </a>
+            </div>
+        
+        </section>
+        
 
-    <section class="panel flex flex-col justify-center items-center bg-[#c3b281] text-[#4b3d3a]">
-      <h1 class="text-6xl font-bold mb-4">Processing</h1>
-      <p class="text-2xl max-w-xl text-center">Beans are washed, dried, and carefully sorted for perfection.</p>
-    </section>
+        <section class="panel relative flex items-center justify-center h-screen bg-[#c3b281] text-[#4b3d3a]">
 
-    <section class="panel flex flex-col justify-center items-center bg-[#e6d9af] text-[#4b3d3a]">
-      <h1 class="text-6xl font-bold mb-4">Brewing</h1>
-      <p class="text-2xl max-w-xl text-center">Finally, the rich aroma fills your cup — ready to enjoy.</p>
-    </section>
-  </div>
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+
+                <!-- Mobile Background Image -->
+                <div class="block md:hidden w-full h-full bg-cover bg-center" style="background-image: url('Assets/images/coffee_cup.jpg');"></div>
+            
+                <!-- Desktop Background Image -->
+                <div class="hidden md:block w-full h-full bg-cover bg-center" style="background-image: url('Assets/images/hot_coffee.jpeg');"></div>
+            
+                <!-- Mobile-only whitish overlay -->
+                <div class="absolute inset-0 bg-white opacity-40 md:opacity-0"></div>
+            
+            </div>
+            
+            <!-- Text Content (Centered) -->
+            <div class="relative z-20 p-12 text-center">
+                <h1 class="text-6xl font-bold mb-6 leading-tight text-[#4b3d3a] md:text-[#f5f4ef]">
+                    Perfect Cup Served
+                </h1>
+                <p class="text-2xl text-[#4b3d3a] md:text-[#f5f4ef]">
+                    Savor the rich aroma, crafted from seed to cup with passion.
+                </p>
+                <!-- CTA Button -->
+                <a href="#order" class="mt-8 inline-block text-xl font-extrabold text-white bg-[#7c5b3a] py-4 px-12 rounded-full hover:bg-[#6b4e3b] transform hover:scale-105 transition-all duration-300 sm:py-3 sm:px-6">
+                    Order  Now
+                </a>
+            </div>
+        
+            <!-- Desktop Only: GIPHY iframe bottom corner -->
+            <div class="hidden md:block absolute bottom-8 right-8 w-64 h-64 overflow-hidden rounded-lg shadow-lg z-30">
+                <iframe src="https://giphy.com/embed/oZCq0OeLeZ2LbRJPxS" width="100%" height="100%" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+            </div>
+        
+        </section>
+    </div>
 
   <!-- Normal page continuation -->
   <div class="min-h-[200vh] bg-[#fff] text-gray-800 p-10">
