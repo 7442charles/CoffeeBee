@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Farm Horizontal Scroll</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* No horizontal scroll visible */
+    }
+    .panel {
+      flex: 0 0 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+   <!-- Horizontal Scroll Section -->
+   <div id="horizontal-scroll" class="flex">
+    <section class="panel flex flex-col justify-center items-center bg-[#4b3d3a] text-[#e6d9af]">
+      <h1 class="text-6xl font-bold mb-4">Planting</h1>
+      <p class="text-2xl max-w-xl text-center">From fertile soils to careful sowing, our journey starts here.</p>
+    </section>
+
+    <section class="panel flex flex-col justify-center items-center bg-[#7c5b3a] text-[#e6d9af]">
+      <h1 class="text-6xl font-bold mb-4">Harvesting</h1>
+      <p class="text-2xl max-w-xl text-center">Ripe coffee cherries are handpicked with love and precision.</p>
+    </section>
+
+    <section class="panel flex flex-col justify-center items-center bg-[#c3b281] text-[#4b3d3a]">
+      <h1 class="text-6xl font-bold mb-4">Processing</h1>
+      <p class="text-2xl max-w-xl text-center">Beans are washed, dried, and carefully sorted for perfection.</p>
+    </section>
+
+    <section class="panel flex flex-col justify-center items-center bg-[#e6d9af] text-[#4b3d3a]">
+      <h1 class="text-6xl font-bold mb-4">Brewing</h1>
+      <p class="text-2xl max-w-xl text-center">Finally, the rich aroma fills your cup — ready to enjoy.</p>
+    </section>
+  </div>
+
+  <!-- Normal page continuation -->
+  <div class="min-h-[200vh] bg-[#fff] text-gray-800 p-10">
+    <h2 class="text-5xl font-bold mb-6">Our Coffee Selection</h2>
+    <p class="text-xl mb-4">Explore our premium coffee beans, handpicked and carefully processed for your perfect brew.</p>
+  </div>
+
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const sections = gsap.utils.toArray('.panel');
+    const scrollContainer = document.getElementById('horizontal-scroll');
+
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: scrollContainer,
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        end: () => "+=" + scrollContainer.offsetWidth
+      }
+    });
+  </script>
+
+</body>
+</html>
