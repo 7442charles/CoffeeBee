@@ -30,10 +30,26 @@
 
    <!-- Horizontal Scroll Section -->
    <div id="horizontal-scroll" class="flex">
-    <section class="panel flex flex-col justify-center items-center bg-[#4b3d3a] text-[#e6d9af]">
-      <h1 class="text-6xl font-bold mb-4">Planting</h1>
-      <p class="text-2xl max-w-xl text-center">From fertile soils to careful sowing, our journey starts here.</p>
+    <section class="panel relative flex items-center justify-center h-screen bg-[#4b3d3a] text-[#e6d9af]">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('Assets/images/Coffeefarm.png'); z-index: 0;">
+          <!-- Empty div for background image -->
+        </div>
+      
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[#10391f] opacity-40 z-10"></div>
+      
+        <!-- Text Content (Centered) -->
+        <div class="relative z-20 p-12 text-center">
+          <h1 class="text-6xl font-bold mb-6 leading-tight text-[#FFFFFF]">Growing Premium Coffee</h1>
+          <p class="text-2xl text-[#f5f4ef]">Nurturing rich soils and cultivating the finest beans for your perfect cup.</p>
+        </div>
+      
     </section>
+      
+      
+      
 
     <section class="panel flex flex-col justify-center items-center bg-[#7c5b3a] text-[#e6d9af]">
       <h1 class="text-6xl font-bold mb-4">Harvesting</h1>
@@ -75,6 +91,7 @@
         end: () => "+=" + scrollContainer.offsetWidth
       }
     });
+    
   </script>
 
 </body>
