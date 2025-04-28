@@ -218,76 +218,179 @@
         </section>
     </div>
 
+    <section id="about" class="py-20 bg-[#f5f4ef] text-[#4b3d3a]">
+        <div class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-12">
+    
+        <!-- Text Content -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-5xl font-bold mb-6 leading-tight">Our Story</h2>
+            <p class="text-xl mb-6">
+            At <span class="font-bold text-[#7c5b3a]">CoffeeBee</span>, coffee isn't just a drink — it's a way of life. 
+            From the lush highlands of Kenya to your favorite cup, we pour heart and heritage into every bean. 
+            Every roast tells a story of passion, tradition, and craftsmanship, perfected over generations.
+            </p>
+            <p class="text-xl mb-8">
+            We're proud to support local farmers, hand-select the finest beans, and deliver a taste that captures the spirit of Africa.
+            Whether you're starting your day or savoring a slow moment, CoffeeBee brings you a perfect cup — every time.
+            </p>
+            <a href="#shop" class="inline-block bg-[#7c5b3a] text-white font-bold py-3 px-8 rounded-full hover:bg-[#6b4e3b] transform hover:scale-105 transition-all duration-300">
+            Shop Our Coffee
+            </a>
+        </div>
+    
+        <!-- GIF Embed -->
+        <div class="lg:w-1/2 flex justify-center">
+            <div class="relative w-full max-w-md rounded-lg overflow-hidden shadow-lg">
+            <div style="width:100%;height:0;padding-bottom:75%;position:relative;">
+                <iframe src="https://giphy.com/embed/Q6joirtIBHUsw" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </div>
+            </div>
+        </div>
+    
+        </div>
+    </section>
+      
+
+    <!-- shop -->
     <section id="shop" class="py-16 bg-[#f5f4ef]">
         <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center text-[#4b3d3a] mb-12">Our Coffee Selection</h2>
-      
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <h2 class="text-4xl font-bold text-center text-[#4b3d3a] mb-12">Our Coffee Selection</h2>
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             
             <!-- Product Card -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img src="Assets/images/gold_blend.jpg" alt="Coffee Brand 1" class="w-full h-56 object-cover">
-              <div class="p-6 text-center">
+            <img src="Assets/images/gold_blend.jpg" alt="Coffee Brand 1" class="w-full h-56 object-cover">
+            <div class="p-6 text-center">
                 <h3 class="text-xl font-semibold mb-2 text-[#4b3d3a]">Gold Blend</h3>
                 <div class="flex items-center justify-center mb-2">
-                  <!-- Stars -->
-                  <span class="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                <!-- Stars -->
+                <span class="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                 </div>
                 <p class="text-lg font-bold text-[#7c5b3a] mb-4">KSh 585</p>
-                <button class="bg-[#7c5b3a] text-white font-bold py-2 px-6 rounded-full hover:bg-[#6b4e3b] transition transform hover:scale-105">
-                  Add to Cart
+                <button 
+                    class="add-to-cart-btn bg-[#7c5b3a] text-white px-4 py-2 rounded" 
+                    data-name="Gold Blend" 
+                    data-price="585" 
+                    data-img="Assets/images/gold_blend.jpg">
+                    Add to Cart
                 </button>
-              </div>
             </div>
-      
+            </div>
+    
             <!-- Repeat Product Card (Example) -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img src="Assets/images/Instant-1.6-grams.png" alt="Coffee Brand 2" class="w-full h-56 object-cover">
-              <div class="p-6 text-center">
+            <img src="Assets/images/Instant-1.6-grams.png" alt="Coffee Brand 2" class="w-full h-56 object-cover">
+            <div class="p-6 text-center">
                 <h3 class="text-xl font-semibold mb-2 text-[#4b3d3a]">Insta 1.6</h3>
                 <div class="flex items-center justify-center mb-2">
-                  <span class="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                 </div>
                 <p class="text-lg font-bold text-[#7c5b3a] mb-4">KSh 96</p>
-                <button class="bg-[#7c5b3a] text-white font-bold py-2 px-6 rounded-full hover:bg-[#6b4e3b] transition transform hover:scale-105">
-                  Add to Cart
+                <button 
+                    class="add-to-cart-btn bg-[#7c5b3a] text-white px-4 py-2 rounded" 
+                    data-name="Insta 1.6" 
+                    data-price="96" 
+                    data-img="Assets/images/Instant-1.6-grams.png">
+                    Add to Cart
                 </button>
-              </div>
             </div>
-      
+            </div>
+    
             <!-- Another Product Card -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img src="Assets/images/Instant-100-grams.png" alt="Coffee Brand 3" class="w-full h-56 object-cover">
-              <div class="p-6 text-center">
+            <img src="Assets/images/Instant-100-grams.png" alt="Coffee Brand 3" class="w-full h-56 object-cover">
+            <div class="p-6 text-center">
                 <h3 class="text-xl font-semibold mb-2 text-[#4b3d3a]">Insta !00</h3>
                 <div class="flex items-center justify-center mb-2">
-                  <span class="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                <span class="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
                 </div>
                 <p class="text-lg font-bold text-[#7c5b3a] mb-4">KSh 410</p>
-                <button class="bg-[#7c5b3a] text-white font-bold py-2 px-6 rounded-full hover:bg-[#6b4e3b] transition transform hover:scale-105">
-                  Add to Cart
+                <button 
+                    class="add-to-cart-btn bg-[#7c5b3a] text-white px-4 py-2 rounded" 
+                    data-name="Insta 100" 
+                    data-price="410" 
+                    data-img="Assets/images/Instant-100-grams.png">
+                    Add to Cart
                 </button>
-              </div>
             </div>
-      
+            </div>
+    
             <!-- Another Product Card -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img src="Assets/images/Green-Beans.png" alt="Coffee Brand 4" class="w-full h-56 object-cover">
-              <div class="p-6 text-center">
+            <img src="Assets/images/Green-Beans.png" alt="Coffee Brand 4" class="w-full h-56 object-cover">
+            <div class="p-6 text-center">
                 <h3 class="text-xl font-semibold mb-2 text-[#4b3d3a]">Green Beans</h3>
                 <div class="flex items-center justify-center mb-2">
-                  <span class="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                <span class="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                 </div>
                 <p class="text-lg font-bold text-[#7c5b3a] mb-4">KSh 2,000</p>
-                <button class="bg-[#7c5b3a] text-white font-bold py-2 px-6 rounded-full hover:bg-[#6b4e3b] transition transform hover:scale-105">
-                  Add to Cart
+                <button 
+                    class="add-to-cart-btn bg-[#7c5b3a] text-white px-4 py-2 rounded" 
+                    data-name="Green Beans" 
+                    data-price="500" 
+                    data-img="Assets/images/Green-Beans.png">
+                    Add to Cart
                 </button>
-              </div>
             </div>
-      
-          </div>
+            </div>
+    
         </div>
-      </section>
+        </div>
+    </section>
+      
+    <section id="mission-vision-values" class="py-20 bg-[#4b3d3a] text-[#f5f4ef]">
+        <div class="container mx-auto px-6">
+    
+        <!-- Section Heading -->
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold mb-4">Our Mission & Vision</h2>
+            <p class="text-xl text-[#e6d9af]">Rooted in purpose. Driven by passion.</p>
+        </div>
+    
+        <!-- Mission and Vision -->
+        <div class="grid md:grid-cols-2 gap-12 mb-20">
+            <div class="bg-[#7c5b3a] p-10 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+            <h3 class="text-3xl font-bold mb-4">Mission</h3>
+            <p class="text-lg leading-relaxed">
+                Elevate the livelihood of coffee farmers and communities through value-adding and changing lives through job creation.
+            </p>
+            </div>
+            <div class="bg-[#7c5b3a] p-10 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+            <h3 class="text-3xl font-bold mb-4">Vision</h3>
+            <p class="text-lg leading-relaxed">
+                Our vision is to deliver the best experience through ethically sourced coffee to impact both local and international demand.
+            </p>
+            </div>
+        </div>
+    
+        <!-- Values Section -->
+        <div class="text-center mb-12">
+            <h2 class="text-5xl font-bold mb-4">Our Values</h2>
+            <p class="text-xl text-[#e6d9af] mb-10">The heart of everything we do.</p>
+        </div>
+    
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="bg-[#7c5b3a] p-8 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+            <h4 class="text-2xl font-bold mb-2">Trust</h4>
+            <p class="text-base">Building authentic relationships with our farmers, partners, and customers.</p>
+            </div>
+            <div class="bg-[#7c5b3a] p-8 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+            <h4 class="text-2xl font-bold mb-2">Teamwork</h4>
+            <p class="text-base">Collaborating with passion to create meaningful impact together.</p>
+            </div>
+            <div class="bg-[#7c5b3a] p-8 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+            <h4 class="text-2xl font-bold mb-2">Innovation</h4>
+            <p class="text-base">Pioneering new ways to enrich your coffee journey and community lives.</p>
+            </div>
+            <div class="bg-[#7c5b3a] p-8 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+            <h4 class="text-2xl font-bold mb-2">Integrity</h4>
+            <p class="text-base">Upholding transparency, honesty, and responsibility in all we do.</p>
+            </div>
+        </div>
+    
+        </div>
+    </section>
       
 
     <footer class="bg-gradient-to-r from-[#7c5b3a] to-[#4b3d3a] text-white py-8">
@@ -354,8 +457,47 @@
         </div>
     </footer>
 
+    <!-- Floating Cart Button with SVG -->
+    <button id="cart-btn" class="fixed bottom-6 right-6 bg-[#7c5b3a] hover:bg-[#6b4e3b] text-white p-4 rounded-full shadow-lg z-50 transform hover:scale-110 transition-all duration-300">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+            <g clip-path="url(#clip0_901_3095)">
+            <path d="M10 24L9 20L8 16L7 12L6 8H31L29 22C28.86 23.04 28.12 24 27 24H10Z" fill="#FFC44D"></path>
+            <path d="M23 27C24.1 27 25 27.9 25 29C25 30.1 24.1 31 23 31C21.9 31 21 30.1 21 29C21 27.9 21.9 27 23 27ZM11 27C12.1 27 13 27.9 13 29C13 30.1 12.1 31 11 31C9.9 31 9 30.1 9 29C9 27.9 9.9 27 11 27Z" fill="#668077"></path>
+            <path d="M8 16H2M9 20H3M7 12H1M26 16H11M25 20H12M27 12H10M10 24H27C28.125 24 28.862 23.038 29 22L31 8H6L4 1H1M13 29C13 27.896 12.104 27 11 27C9.896 27 9 27.896 9 29C9 30.104 9.896 31 11 31C12.104 31 13 30.104 13 29ZM25 29C25 27.896 24.104 27 23 27C21.896 27 21 27.896 21 29C21 30.104 21.896 31 23 31C24.104 31 25 30.104 25 29Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+            <clipPath id="clip0_901_3095">
+                <rect width="32" height="32" fill="white"></rect>
+            </clipPath>
+            </defs>
+        </g>
+        </svg>
+    </button>
+  
+    <!-- Floating Cart Modal -->
+    <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg w-11/12 max-w-md p-6 relative">
+            <button id="close-cart" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            <h2 class="text-2xl font-bold mb-4 text-[#4b3d3a]">Your Cart</h2>
+            
+            <!-- Cart Items List -->
+            <div id="cart-items" class="space-y-4 max-h-60 overflow-y-auto"></div>
 
+            <!-- Checkout Section -->
+            <div class="mt-6 border-t pt-4">
+            <p class="text-lg font-bold text-[#7c5b3a] mb-2">Checkout</p>
+            <div class="flex flex-col space-y-2">
+                <button id="mpesa-checkout" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 rounded transition">Pay with M-PESA</button>
+                <button id="card-checkout" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded transition">Pay with Card</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
+      
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
@@ -375,6 +517,8 @@
     });
     
   </script>
+
+<script src="Assets/js/main.js"></script>
 
 </body>
 </html>
